@@ -1,0 +1,4 @@
+/usr/bin/ld: /usr/local/lib/librocksdb.a(format.o): undefined reference to symbol 'inflateInit2_'
+/usr/lib64/libz.so.1: error adding symbols: DSO missing from command line
+collect2: 错误：ld 返回 1
+make: *** [all] 错误 1

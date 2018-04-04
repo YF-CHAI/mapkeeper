@@ -151,7 +151,7 @@ public:
 
     
 
-    void scanAscending(RecordListResponse& _return, std::map<std::string, std::string>& map,
+    void scanAscending(RecordListResponse& _return, const string& mapName,
               const std::string& startKey, const bool startKeyIncluded, 
               const std::string& endKey, const bool endKeyIncluded,
               const int32_t maxRecords, const int32_t maxBytes) {
@@ -165,15 +165,16 @@ public:
         ReadOptions options(true, true);
         options.tailing = false;
         Iterator* iter = itr->second->NewIterator(options);
-        Comparator* cmp = itr->second->DefaultColumnFamily()->GetComparator();
+        const Comparator* cmp = itr->second->DefaultColumnFamily()->GetComparator();
         iter->Seek(startKey);
         if (!startKeyIncluded && cmp->Compare(startKey, iter->value()) == 0)
             iter->Next();
-        for (; iter->valid() && (endKeyIncluded) ? (cmp->Compare(iter->value(), endKey)<=0):(cmp->Compare(iter->value(), endKey)<0); iter->Next()) {
+        int numBytes = 0;
+        for (; iter->Valid() && (endKeyIncluded) ? (cmp->Compare(iter->value(), endKey)<=0):(cmp->Compare(iter->value(), endKey)<0); iter->Next()) {
             mapkeeper::Record record;
-            record.key = iter->key();
-            record.value = iter->value();
-            numBytes += iter->key().size() + iter->value.size();
+            record.key = iter->key().ToString();
+            record.value = iter->value().ToString();
+            numBytes += iter->key().size() + iter->value().size();
             _return.records.push_back(record);
             if (_return.records.size() >= (uint32_t)maxRecords || numBytes >= maxBytes) {
                 _return.responseCode = mapkeeper::ResponseCode::Success;
@@ -185,7 +186,7 @@ public:
         _return.responseCode = ResponseCode::ScanEnded;
     }
 
-    void scanDescending(RecordListResponse& _return, std::map<std::string, std::string>& map,
+    void scanDescending(RecordListResponse& _return, const std::string& mapName,
               const std::string& startKey, const bool startKeyIncluded, 
               const std::string& endKey, const bool endKeyIncluded,
               const int32_t maxRecords, const int32_t maxBytes) {
@@ -199,15 +200,16 @@ public:
         ReadOptions options(true, true);
         options.tailing = false;
         Iterator* iter = itr->second->NewIterator(options);
-        Comparator* cmp = itr->second->DefaultColumnFamily()->GetComparator();
+        const Comparator* cmp = itr->second->DefaultColumnFamily()->GetComparator();
         iter->Seek(startKey);
         if (!startKeyIncluded && cmp->Compare(startKey, iter->value()) == 0)
             iter->Prev();
-        for (; iter->valid() && (endKeyIncluded) ? (cmp->Compare(iter->value(), endKey)>=0):(cmp->Compare(iter->value(), endKey)>0); iter->Prev()) {
+        int numBytes = 0;
+        for (; iter->Valid() && (endKeyIncluded) ? (cmp->Compare(iter->value(), endKey)>=0):(cmp->Compare(iter->value(), endKey)>0); iter->Prev()) {
             mapkeeper::Record record;
-            record.key = iter->key();
-            record.value = iter->value();
-            numBytes += iter->key().size() + iter->value.size();
+            record.key = iter->key().ToString();
+            record.value = iter->value().ToString();
+            numBytes += iter->key().size() + iter->value().size();
             _return.records.push_back(record);
             if (_return.records.size() >= (uint32_t)maxRecords || numBytes >= maxBytes) {
                 _return.responseCode = mapkeeper::ResponseCode::Success;

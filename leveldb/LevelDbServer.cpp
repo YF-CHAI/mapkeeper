@@ -41,8 +41,6 @@ using std::string;
 //using leveldb::Iterator;
 using namespace leveldb;
 
-class DBImpl;
-
 int syncmode;
 int blindinsert;
 int blindupdate;
@@ -328,11 +326,11 @@ int main(int argc, char **argv) {
     blindupdate = atoi(argv[3]);
     leveldbpath = string(argv[4]);
     int port = 9090;
-    shared_ptr<LevelDbServer> handler(new LevelDbServer(leveldbpath));
-    shared_ptr<TProcessor> processor(new MapKeeperProcessor(handler));
-    shared_ptr<TServerTransport> serverTransport(new TServerSocket(port));
-    shared_ptr<TTransportFactory> transportFactory(new TFramedTransportFactory());
-    shared_ptr<TProtocolFactory> protocolFactory(new TBinaryProtocolFactory());
+    boost::shared_ptr<LevelDbServer> handler(new LevelDbServer(leveldbpath));
+    boost::shared_ptr<TProcessor> processor(new MapKeeperProcessor(handler));
+    boost::shared_ptr<TServerTransport> serverTransport(new TServerSocket(port));
+    boost::shared_ptr<TTransportFactory> transportFactory(new TFramedTransportFactory());
+    boost::shared_ptr<TProtocolFactory> protocolFactory(new TBinaryProtocolFactory());
     TThreadedServer server (processor, serverTransport, transportFactory, protocolFactory);
     server.serve();
     return 0;

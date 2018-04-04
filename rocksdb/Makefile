@@ -4,7 +4,7 @@ EXECUTABLE = mapkeeper_rocksdb
 
 all :
 	g++ -std=c++11 -Wall -o $(EXECUTABLE) *cpp  -DHAVE_NETINET_IN_H -DHAVE_INTTYPES_H     -I $(THRIFT_DIR)/include/thrift -I $(THRIFT_DIR)/include \
-        -lbz2 -lz -lboost_thread -lboost_system -lpthread -lboost_filesystem -lboost_program_options -lthrift -lrocksdb -I ../thrift/gen-cpp \
+       -L  /usr/local/lib64/ -L  /usr/local/lib/  -lsnappy -llz4 -lzstd -lbz2 -lz -lboost_thread -lboost_system -lpthread -lboost_filesystem -lboost_program_options -lthrift -lrocksdb -I ../thrift/gen-cpp \
     -L $(THRIFT_DIR)/lib \
         -L ../thrift/gen-cpp -lmapkeeper \
            -Wl,-rpath,\$$ORIGIN/../thrift/gen-cpp            \

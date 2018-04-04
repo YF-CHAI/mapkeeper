@@ -42,7 +42,7 @@ using std::string;
 int syncmode;
 int blindinsert;
 int blindupdate;
-string path;
+string leveldbpath;
 class RocksDBServer: virtual public MapKeeperIf {
 public:
     RocksDBServer(const std::string& directoryName) : 
@@ -336,9 +336,9 @@ int main(int argc, char **argv) {
     syncmode    = atoi(argv[1]);
     blindinsert = atoi(argv[2]);
     blindupdate = atoi(argv[3]);
-    path = string(argv[4]);
+    leveldbpath = string(argv[4]);
     int port = 9090;
-    shared_ptr<RocksDBServer> handler(new RocksDBServer(path));
+    shared_ptr<RocksDBServer> handler(new RocksDBServer(leveldbpath));
     shared_ptr<TProcessor> processor(new MapKeeperProcessor(handler));
     shared_ptr<TServerTransport> serverTransport(new TServerSocket(port));
     shared_ptr<TTransportFactory> transportFactory(new TFramedTransportFactory());

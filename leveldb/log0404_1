@@ -1,0 +1,948 @@
+In file included from /usr/local/include/thrift/protocol/TProtocol.h:23:0,
+                 from /usr/local/include/thrift/TProcessor.h:24,
+                 from ../thrift/gen-cpp/MapKeeper.h:10,
+                 from LevelDbServer.cpp:8:
+/usr/local/include/thrift/transport/TTransport.h:34:1: 错误：‘uint32_t’不是一个类型名
+ uint32_t readAll(Transport_ &trans, uint8_t* buf, uint32_t len) {
+ ^
+/usr/local/include/thrift/transport/TTransport.h:107:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(uint8_t* buf, uint32_t len) {
+   ^
+/usr/local/include/thrift/transport/TTransport.h:111:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t read_virt(uint8_t* /* buf */, uint32_t /* len */) {
+           ^
+/usr/local/include/thrift/transport/TTransport.h:124:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t readAll(uint8_t* buf, uint32_t len) {
+   ^
+/usr/local/include/thrift/transport/TTransport.h:128:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t readAll_virt(uint8_t* buf, uint32_t len) {
+           ^
+/usr/local/include/thrift/transport/TTransport.h:139:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t readEnd() {
+           ^
+/usr/local/include/thrift/transport/TTransport.h:156:20: 错误：‘uint8_t’不是一个类型名
+   void write(const uint8_t* buf, uint32_t len) {
+                    ^
+/usr/local/include/thrift/transport/TTransport.h:156:29: 错误：ISO C++ 不允许声明无类型的‘buf’ [-fpermissive]
+   void write(const uint8_t* buf, uint32_t len) {
+                             ^
+/usr/local/include/thrift/transport/TTransport.h:156:34: 错误：‘uint32_t’未声明
+   void write(const uint8_t* buf, uint32_t len) {
+                                  ^
+/usr/local/include/thrift/transport/TTransport.h:160:33: 错误：‘uint8_t’不是一个类型名
+   virtual void write_virt(const uint8_t* /* buf */, uint32_t /* len */) {
+                                 ^
+/usr/local/include/thrift/transport/TTransport.h:160:40: 错误：ISO C++ 不允许声明无类型的‘parameter’ [-fpermissive]
+   virtual void write_virt(const uint8_t* /* buf */, uint32_t /* len */) {
+                                        ^
+/usr/local/include/thrift/transport/TTransport.h:160:53: 错误：‘uint32_t’未声明
+   virtual void write_virt(const uint8_t* /* buf */, uint32_t /* len */) {
+                                                     ^
+/usr/local/include/thrift/transport/TTransport.h:172:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t writeEnd() {
+           ^
+/usr/local/include/thrift/transport/TTransport.h:214:9: 错误：‘uint8_t’不是一个类型名
+   const uint8_t* borrow(uint8_t* buf, uint32_t* len) {
+         ^
+/usr/local/include/thrift/transport/TTransport.h:218:17: 错误：‘uint8_t’不是一个类型名
+   virtual const uint8_t* borrow_virt(uint8_t* /* buf */, uint32_t* /* len */) {
+                 ^
+/usr/local/include/thrift/transport/TTransport.h:231:16: 错误：‘uint32_t’未声明
+   void consume(uint32_t len) {
+                ^
+/usr/local/include/thrift/transport/TTransport.h:235:29: 错误：‘uint32_t’未声明
+   virtual void consume_virt(uint32_t /* len */) {
+                             ^
+In file included from /usr/local/include/thrift/TProcessor.h:24:0,
+                 from ../thrift/gen-cpp/MapKeeper.h:10,
+                 from LevelDbServer.cpp:8:
+/usr/local/include/thrift/protocol/TProtocol.h:184:1: 错误：‘uint32_t’不是一个类型名
+ uint32_t skip(Protocol_& prot, TType type) {
+ ^
+/usr/local/include/thrift/protocol/TProtocol.h:305:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t writeMessageBegin_virt(const std::string& name,
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:309:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t writeMessageEnd_virt() = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:312:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t writeStructBegin_virt(const char* name) = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:314:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t writeStructEnd_virt() = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:316:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t writeFieldBegin_virt(const char* name,
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:320:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t writeFieldEnd_virt() = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:322:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t writeFieldStop_virt() = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:324:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t writeMapBegin_virt(const TType keyType,
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:328:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t writeMapEnd_virt() = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:330:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t writeListBegin_virt(const TType elemType,
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:333:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t writeListEnd_virt() = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:335:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t writeSetBegin_virt(const TType elemType,
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:338:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t writeSetEnd_virt() = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:340:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t writeBool_virt(const bool value) = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:342:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t writeByte_virt(const int8_t byte) = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:344:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t writeI16_virt(const int16_t i16) = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:346:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t writeI32_virt(const int32_t i32) = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:348:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t writeI64_virt(const int64_t i64) = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:350:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t writeDouble_virt(const double dub) = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:352:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t writeString_virt(const std::string& str) = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:354:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t writeBinary_virt(const std::string& str) = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:356:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t writeMessageBegin(const std::string& name,
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:363:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t writeMessageEnd() {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:369:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t writeStructBegin(const char* name) {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:374:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t writeStructEnd() {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:379:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t writeFieldBegin(const char* name,
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:386:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t writeFieldEnd() {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:391:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t writeFieldStop() {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:396:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t writeMapBegin(const TType keyType,
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:403:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t writeMapEnd() {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:408:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t writeListBegin(const TType elemType, const uint32_t size) {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:413:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t writeListEnd() {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:418:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t writeSetBegin(const TType elemType, const uint32_t size) {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:423:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t writeSetEnd() {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:428:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t writeBool(const bool value) {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:433:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t writeByte(const int8_t byte) {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:438:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t writeI16(const int16_t i16) {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:443:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t writeI32(const int32_t i32) {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:448:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t writeI64(const int64_t i64) {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:453:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t writeDouble(const double dub) {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:458:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t writeString(const std::string& str) {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:463:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t writeBinary(const std::string& str) {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:472:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t readMessageBegin_virt(std::string& name,
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:476:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t readMessageEnd_virt() = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:478:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t readStructBegin_virt(std::string& name) = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:480:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t readStructEnd_virt() = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:482:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t readFieldBegin_virt(std::string& name,
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:486:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t readFieldEnd_virt() = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:488:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t readMapBegin_virt(TType& keyType,
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:492:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t readMapEnd_virt() = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:494:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t readListBegin_virt(TType& elemType,
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:497:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t readListEnd_virt() = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:499:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t readSetBegin_virt(TType& elemType,
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:502:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t readSetEnd_virt() = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:504:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t readBool_virt(bool& value) = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:506:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t readBool_virt(std::vector<bool>::reference value) = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:508:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t readByte_virt(int8_t& byte) = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:510:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t readI16_virt(int16_t& i16) = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:512:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t readI32_virt(int32_t& i32) = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:514:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t readI64_virt(int64_t& i64) = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:516:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t readDouble_virt(double& dub) = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:518:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t readString_virt(std::string& str) = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:520:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t readBinary_virt(std::string& str) = 0;
+           ^
+/usr/local/include/thrift/protocol/TProtocol.h:522:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t readMessageBegin(std::string& name,
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:529:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t readMessageEnd() {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:534:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t readStructBegin(std::string& name) {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:539:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t readStructEnd() {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:544:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t readFieldBegin(std::string& name,
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:551:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t readFieldEnd() {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:556:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t readMapBegin(TType& keyType, TType& valType, uint32_t& size) {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:561:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t readMapEnd() {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:566:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t readListBegin(TType& elemType, uint32_t& size) {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:571:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t readListEnd() {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:576:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t readSetBegin(TType& elemType, uint32_t& size) {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:581:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t readSetEnd() {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:586:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t readBool(bool& value) {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:591:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t readByte(int8_t& byte) {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:596:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t readI16(int16_t& i16) {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:601:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t readI32(int32_t& i32) {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:606:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t readI64(int64_t& i64) {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:611:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t readDouble(double& dub) {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:616:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t readString(std::string& str) {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:621:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t readBinary(std::string& str) {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:631:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t readBool(std::vector<bool>::reference value) {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:639:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t skip(TType type) {
+   ^
+/usr/local/include/thrift/protocol/TProtocol.h:643:11: 错误：‘uint32_t’不是一个类型名
+   virtual uint32_t skip_virt(TType type) {
+           ^
+In file included from ../thrift/gen-cpp/MapKeeper.h:10:0,
+                 from LevelDbServer.cpp:8:
+/usr/local/include/thrift/TProcessor.h:72:57: 错误：‘uint32_t’未声明
+   virtual void postRead(void* ctx, const char* fn_name, uint32_t bytes) {
+                                                         ^
+/usr/local/include/thrift/TProcessor.h:89:58: 错误：‘uint32_t’未声明
+   virtual void postWrite(void* ctx, const char* fn_name, uint32_t bytes) {
+                                                          ^
+In file included from ../thrift/gen-cpp/mapkeeper_types.h:11:0,
+                 from ../thrift/gen-cpp/MapKeeper.h:11,
+                 from LevelDbServer.cpp:8:
+/usr/local/include/thrift/TApplicationException.h:94:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(protocol::TProtocol* iprot);
+   ^
+/usr/local/include/thrift/TApplicationException.h:95:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(protocol::TProtocol* oprot) const;
+   ^
+In file included from ../thrift/gen-cpp/MapKeeper.h:11:0,
+                 from LevelDbServer.cpp:8:
+../thrift/gen-cpp/mapkeeper_types.h:52:16: 错误：‘uint8_t’不是一个类型名
+   static const uint8_t binary_fingerprint[16]; // = {0x07,0xA9,0x61,0x5F,0x83,0x7F,0x7D,0x0A,0x95,0x2B,0x59,0x5D,0xD3,0x02,0x09,0x72};
+                ^
+In file included from ../thrift/gen-cpp/MapKeeper.h:11:0,
+                 from LevelDbServer.cpp:8:
+../thrift/gen-cpp/mapkeeper_types.h:86:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/mapkeeper_types.h:87:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/mapkeeper_types.h:101:16: 错误：‘uint8_t’不是一个类型名
+   static const uint8_t binary_fingerprint[16]; // = {0xDE,0x13,0xBB,0xF7,0x1C,0x22,0xA1,0x59,0x3A,0x4D,0x79,0xED,0x92,0x88,0xA3,0xC8};
+                ^
+../thrift/gen-cpp/mapkeeper_types.h:135:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/mapkeeper_types.h:136:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/mapkeeper_types.h:150:16: 错误：‘uint8_t’不是一个类型名
+   static const uint8_t binary_fingerprint[16]; // = {0x19,0xB5,0x24,0x05,0x89,0xE6,0x80,0x30,0x1A,0x7E,0x32,0xDF,0x39,0x71,0xEF,0xBE};
+                ^
+../thrift/gen-cpp/mapkeeper_types.h:184:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/mapkeeper_types.h:185:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/mapkeeper_types.h:199:16: 错误：‘uint8_t’不是一个类型名
+   static const uint8_t binary_fingerprint[16]; // = {0xA2,0x2B,0xE3,0xE8,0x46,0x88,0xC9,0xDA,0x4E,0x00,0xCC,0x90,0x2B,0x4E,0xE8,0x18};
+                ^
+../thrift/gen-cpp/mapkeeper_types.h:233:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/mapkeeper_types.h:234:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+In file included from LevelDbServer.cpp:8:0:
+../thrift/gen-cpp/MapKeeper.h:116:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:117:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:129:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:166:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:167:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:186:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:223:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:224:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:237:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:274:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:275:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:294:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:331:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:332:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:345:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:382:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:383:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:402:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:426:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:427:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:439:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:476:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:477:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:496:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:589:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:590:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:610:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:647:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:648:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:667:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:712:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:713:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:727:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:764:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:765:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:784:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:837:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:838:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:853:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:890:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:891:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:910:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:963:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:964:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:979:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:1016:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:1017:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:1036:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:1089:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:1090:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:1105:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:1142:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:1143:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:1162:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:1207:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:1208:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:1222:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:1259:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+../thrift/gen-cpp/MapKeeper.h:1260:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t write(::apache::thrift::protocol::TProtocol* oprot) const;
+   ^
+../thrift/gen-cpp/MapKeeper.h:1279:3: 错误：‘uint32_t’不是一个类型名
+   uint32_t read(::apache::thrift::protocol::TProtocol* iprot);
+   ^
+In file included from /usr/local/include/thrift/protocol/TBinaryProtocol.h:24:0,
+                 from LevelDbServer.cpp:19:
+/usr/local/include/thrift/protocol/TVirtualProtocol.h: 在成员函数‘uint32_t apache::thrift::protocol::TProtocolDefaults::skip(apache::thrift::protocol::TType)’中:
+/usr/local/include/thrift/protocol/TVirtualProtocol.h:309:12: 错误：‘skip’不是‘apache::thrift::protocol’的成员
+     return ::apache::thrift::protocol::skip(*this, type);
+            ^
+/usr/local/include/thrift/protocol/TVirtualProtocol.h: 在成员函数‘uint32_t apache::thrift::protocol::TVirtualProtocol<Protocol_, Super_>::skip(apache::thrift::protocol::TType)’中:
+/usr/local/include/thrift/protocol/TVirtualProtocol.h:538:12: 错误：‘skip’不是‘apache::thrift::protocol’的成员
+     return ::apache::thrift::protocol::skip(*prot, type);
+            ^
+In file included from /usr/local/include/thrift/transport/TBufferTransports.h:27:0,
+                 from LevelDbServer.cpp:22:
+/usr/local/include/thrift/transport/TVirtualTransport.h: 在成员函数‘uint32_t apache::thrift::transport::TTransportDefaults::read(uint8_t*, uint32_t)’中:
+/usr/local/include/thrift/transport/TVirtualTransport.h:51:30: 错误：‘class apache::thrift::transport::TTransport’没有名为‘read_virt’的成员
+     return this->TTransport::read_virt(buf, len);
+                              ^
+/usr/local/include/thrift/transport/TVirtualTransport.h: 在成员函数‘uint32_t apache::thrift::transport::TTransportDefaults::readAll(uint8_t*, uint32_t)’中:
+/usr/local/include/thrift/transport/TVirtualTransport.h:54:30: 错误：‘class apache::thrift::transport::TTransport’没有名为‘readAll_virt’的成员
+     return this->TTransport::readAll_virt(buf, len);
+                              ^
+/usr/local/include/thrift/transport/TVirtualTransport.h: 在成员函数‘void apache::thrift::transport::TTransportDefaults::write(const uint8_t*, uint32_t)’中:
+/usr/local/include/thrift/transport/TVirtualTransport.h:57:42: 错误：对‘apache::thrift::transport::TTransportDefaults::write_virt(const uint8_t*&, uint32_t&)’的调用没有匹配的函数
+     this->TTransport::write_virt(buf, len);
+                                          ^
+/usr/local/include/thrift/transport/TVirtualTransport.h:57:42: 附注：备选是：
+In file included from /usr/local/include/thrift/protocol/TProtocol.h:23:0,
+                 from /usr/local/include/thrift/TProcessor.h:24,
+                 from ../thrift/gen-cpp/MapKeeper.h:10,
+                 from LevelDbServer.cpp:8:
+/usr/local/include/thrift/transport/TTransport.h:160:16: 附注：virtual void apache::thrift::transport::TTransport::write_virt(const int*, int)
+   virtual void write_virt(const uint8_t* /* buf */, uint32_t /* len */) {
+                ^
+/usr/local/include/thrift/transport/TTransport.h:160:16: 附注：  no known conversion for argument 1 from ‘const uint8_t* {aka const unsigned char*}’ to ‘const int*’
+In file included from /usr/local/include/thrift/transport/TBufferTransports.h:27:0,
+                 from LevelDbServer.cpp:22:
+/usr/local/include/thrift/transport/TVirtualTransport.h: 在成员函数‘const uint8_t* apache::thrift::transport::TTransportDefaults::borrow(uint8_t*, uint32_t*)’中:
+/usr/local/include/thrift/transport/TVirtualTransport.h:60:30: 错误：‘class apache::thrift::transport::TTransport’没有名为‘borrow_virt’的成员
+     return this->TTransport::borrow_virt(buf, len);
+                              ^
+/usr/local/include/thrift/transport/TVirtualTransport.h: 在成员函数‘uint32_t apache::thrift::transport::TVirtualTransport<Transport_, Super_>::readAll(uint8_t*, uint32_t)’中:
+/usr/local/include/thrift/transport/TVirtualTransport.h:126:12: 错误：‘readAll’不是‘apache::thrift::transport’的成员
+     return ::apache::thrift::transport::readAll(*trans, buf, len);
+            ^
+In file included from LevelDbServer.cpp:22:0:
+/usr/local/include/thrift/transport/TBufferTransports.h: 在成员函数‘uint32_t apache::thrift::transport::TBufferBase::readAll(uint8_t*, uint32_t)’中:
+/usr/local/include/thrift/transport/TBufferTransports.h:82:12: 错误：‘readAll’不是‘apache::thrift::transport’的成员
+     return apache::thrift::transport::readAll(*this, buf, len);
+            ^
+/usr/local/include/thrift/transport/TBufferTransports.h: 在成员函数‘virtual bool apache::thrift::transport::TBufferedTransport::peek()’中:
+/usr/local/include/thrift/transport/TBufferTransports.h:240:46: 错误：‘class apache::thrift::transport::TTransport’没有名为‘read’的成员
+       setReadBuffer(rBuf_.get(), transport_->read(rBuf_.get(), rBufSize_));
+                                              ^
+LevelDbServer.cpp: 在成员函数‘virtual void LevelDbServer::scan(mapkeeper::RecordListResponse&, const string&, mapkeeper::ScanOrder::type, const string&, bool, const string&, bool, int32_t, int32_t)’中:
+LevelDbServer.cpp:124:117: 错误：对‘LevelDbServer::scanAscending(mapkeeper::RecordListResponse&, const string&, const string&, const bool&, const string&, const bool&, const int32_t&, const int32_t&)’的调用没有匹配的函数
+             scanAscending(_return, mapName, startKey, startKeyIncluded, endKey, endKeyIncluded, maxRecords, maxBytes);
+                                                                                                                     ^
+LevelDbServer.cpp:124:117: 附注：备选是：
+LevelDbServer.cpp:132:10: 附注：void LevelDbServer::scanAscending(mapkeeper::RecordListResponse&, std::map<std::basic_string<char>, std::basic_string<char> >&, const string&, bool, const string&, bool, int32_t, int32_t)
+     void scanAscending(RecordListResponse& _return, std::map<std::string, std::string>& map,
+          ^
+LevelDbServer.cpp:132:10: 附注：  no known conversion for argument 2 from ‘const string {aka const std::basic_string<char>}’ to ‘std::map<std::basic_string<char>, std::basic_string<char> >&’
+LevelDbServer.cpp:126:118: 错误：对‘LevelDbServer::scanDescending(mapkeeper::RecordListResponse&, const string&, const string&, const bool&, const string&, const bool&, const int32_t&, const int32_t&)’的调用没有匹配的函数
+             scanDescending(_return, mapName, startKey, startKeyIncluded, endKey, endKeyIncluded, maxRecords, maxBytes);
+                                                                                                                      ^
+LevelDbServer.cpp:126:118: 附注：备选是：
+LevelDbServer.cpp:166:10: 附注：void LevelDbServer::scanDescending(mapkeeper::RecordListResponse&, std::map<std::basic_string<char>, std::basic_string<char> >&, const string&, bool, const string&, bool, int32_t, int32_t)
+     void scanDescending(RecordListResponse& _return, std::map<std::string, std::string>& map,
+          ^
+LevelDbServer.cpp:166:10: 附注：  no known conversion for argument 2 from ‘const string {aka const std::basic_string<char>}’ to ‘std::map<std::basic_string<char>, std::basic_string<char> >&’
+LevelDbServer.cpp: 在成员函数‘void LevelDbServer::scanAscending(mapkeeper::RecordListResponse&, std::map<std::basic_string<char>, std::basic_string<char> >&, const string&, bool, const string&, bool, int32_t, int32_t)’中:
+LevelDbServer.cpp:137:77: 错误：‘mapName’在此作用域中尚未声明
+         boost::ptr_map<std::string, leveldb::DB>::iterator itr = maps_.find(mapName);
+                                                                             ^
+LevelDbServer.cpp:143:9: 错误：‘Iterator’在此作用域中尚未声明
+         Iterator* iter = itr->second->NewIterator(ReadOptions());
+         ^
+LevelDbServer.cpp:143:9: 附注：建议的替代：
+In file included from /usr/local/include/leveldb/db.h:11:0,
+                 from LevelDbServer.cpp:9:
+/usr/local/include/leveldb/iterator.h:24:22: 附注：  ‘leveldb::Iterator’
+ class LEVELDB_EXPORT Iterator {
+                      ^
+LevelDbServer.cpp:143:19: 错误：‘iter’在此作用域中尚未声明
+         Iterator* iter = itr->second->NewIterator(ReadOptions());
+                   ^
+LevelDbServer.cpp:143:63: 错误：‘ReadOptions’在此作用域中尚未声明
+         Iterator* iter = itr->second->NewIterator(ReadOptions());
+                                                               ^
+LevelDbServer.cpp:143:63: 附注：建议的替代：
+In file included from /usr/local/include/leveldb/db.h:12:0,
+                 from LevelDbServer.cpp:9:
+/usr/local/include/leveldb/options.h:162:23: 附注：  ‘leveldb::ReadOptions’
+ struct LEVELDB_EXPORT ReadOptions {
+                       ^
+LevelDbServer.cpp:144:9: 错误：‘DBImpl’在此作用域中尚未声明
+         DBImpl* dbimpl = dynamic_cast<DBImpl*>(itr->second);
+         ^
+LevelDbServer.cpp:144:17: 错误：‘dbimpl’在此作用域中尚未声明
+         DBImpl* dbimpl = dynamic_cast<DBImpl*>(itr->second);
+                 ^
+LevelDbServer.cpp:144:39: 错误：expected type-specifier before ‘DBImpl’
+         DBImpl* dbimpl = dynamic_cast<DBImpl*>(itr->second);
+                                       ^
+LevelDbServer.cpp:144:39: 错误：expected ‘>’ before ‘DBImpl’
+LevelDbServer.cpp:144:39: 错误：expected ‘(’ before ‘DBImpl’
+LevelDbServer.cpp:144:46: 错误：expected primary-expression before ‘>’ token
+         DBImpl* dbimpl = dynamic_cast<DBImpl*>(itr->second);
+                                              ^
+LevelDbServer.cpp:144:60: 错误：expected ‘)’ before ‘;’ token
+         DBImpl* dbimpl = dynamic_cast<DBImpl*>(itr->second);
+                                                            ^
+LevelDbServer.cpp:145:9: 错误：‘Comparator’在此作用域中尚未声明
+         Comparator* cmp = dbimpl->user_comparator();
+         ^
+LevelDbServer.cpp:145:9: 附注：建议的替代：
+In file included from /usr/local/include/leveldb/db.h:12:0,
+                 from LevelDbServer.cpp:9:
+/usr/local/include/leveldb/options.h:14:7: 附注：  ‘leveldb::Comparator’
+ class Comparator;
+       ^
+LevelDbServer.cpp:145:21: 错误：‘cmp’在此作用域中尚未声明
+         Comparator* cmp = dbimpl->user_comparator();
+                     ^
+LevelDbServer.cpp:154:13: 错误：‘numBytes’在此作用域中尚未声明
+             numBytes += iter->key().size() + iter->value.size();
+             ^
+LevelDbServer.cpp:161:16: 错误：‘delete’的参数类型应为指针而非‘<type error>’
+         delete iter;
+                ^
+LevelDbServer.cpp: 在成员函数‘void LevelDbServer::scanDescending(mapkeeper::RecordListResponse&, std::map<std::basic_string<char>, std::basic_string<char> >&, const string&, bool, const string&, bool, int32_t, int32_t)’中:
+LevelDbServer.cpp:171:77: 错误：‘mapName’在此作用域中尚未声明
+         boost::ptr_map<std::string, leveldb::DB>::iterator itr = maps_.find(mapName);
+                                                                             ^
+LevelDbServer.cpp:178:9: 错误：‘Iterator’在此作用域中尚未声明
+         Iterator* iter = itr->second->NewIterator(ReadOptions());
+         ^
+LevelDbServer.cpp:178:9: 附注：建议的替代：
+In file included from /usr/local/include/leveldb/db.h:11:0,
+                 from LevelDbServer.cpp:9:
+/usr/local/include/leveldb/iterator.h:24:22: 附注：  ‘leveldb::Iterator’
+ class LEVELDB_EXPORT Iterator {
+                      ^
+LevelDbServer.cpp:178:19: 错误：‘iter’在此作用域中尚未声明
+         Iterator* iter = itr->second->NewIterator(ReadOptions());
+                   ^
+LevelDbServer.cpp:178:63: 错误：‘ReadOptions’在此作用域中尚未声明
+         Iterator* iter = itr->second->NewIterator(ReadOptions());
+                                                               ^
+LevelDbServer.cpp:178:63: 附注：建议的替代：
+In file included from /usr/local/include/leveldb/db.h:12:0,
+                 from LevelDbServer.cpp:9:
+/usr/local/include/leveldb/options.h:162:23: 附注：  ‘leveldb::ReadOptions’
+ struct LEVELDB_EXPORT ReadOptions {
+                       ^
+LevelDbServer.cpp:179:9: 错误：‘DBImpl’在此作用域中尚未声明
+         DBImpl* dbimpl = dynamic_cast<DBImpl*>(itr->second);
+         ^
+LevelDbServer.cpp:179:17: 错误：‘dbimpl’在此作用域中尚未声明
+         DBImpl* dbimpl = dynamic_cast<DBImpl*>(itr->second);
+                 ^
+LevelDbServer.cpp:179:39: 错误：expected type-specifier before ‘DBImpl’
+         DBImpl* dbimpl = dynamic_cast<DBImpl*>(itr->second);
+                                       ^
+LevelDbServer.cpp:179:39: 错误：expected ‘>’ before ‘DBImpl’
+LevelDbServer.cpp:179:39: 错误：expected ‘(’ before ‘DBImpl’
+LevelDbServer.cpp:179:46: 错误：expected primary-expression before ‘>’ token
+         DBImpl* dbimpl = dynamic_cast<DBImpl*>(itr->second);
+                                              ^
+LevelDbServer.cpp:179:60: 错误：expected ‘)’ before ‘;’ token
+         DBImpl* dbimpl = dynamic_cast<DBImpl*>(itr->second);
+                                                            ^
+LevelDbServer.cpp:180:9: 错误：‘Comparator’在此作用域中尚未声明
+         Comparator* cmp = dbimpl->user_comparator();
+         ^
+LevelDbServer.cpp:180:9: 附注：建议的替代：
+In file included from /usr/local/include/leveldb/db.h:12:0,
+                 from LevelDbServer.cpp:9:
+/usr/local/include/leveldb/options.h:14:7: 附注：  ‘leveldb::Comparator’
+ class Comparator;
+       ^
+LevelDbServer.cpp:180:21: 错误：‘cmp’在此作用域中尚未声明
+         Comparator* cmp = dbimpl->user_comparator();
+                     ^
+LevelDbServer.cpp:189:13: 错误：‘numBytes’在此作用域中尚未声明
+             numBytes += iter->key().size() + iter->value.size();
+             ^
+LevelDbServer.cpp:196:16: 错误：‘delete’的参数类型应为指针而非‘<type error>’
+         delete iter;
+                ^
+LevelDbServer.cpp: 在函数‘int main(int, char**)’中:
+LevelDbServer.cpp:318:5: 错误：对‘path’的引用有歧义
+     path = string(argv[4]);
+     ^
+LevelDbServer.cpp:40:8: 附注：备选为： std::string path
+ string path;
+        ^
+In file included from /usr/include/boost/filesystem.hpp:16:0,
+                 from LevelDbServer.cpp:13:
+/usr/include/boost/filesystem/path.hpp:55:31: 附注：         class boost::filesystem::path
+   class BOOST_FILESYSTEM_DECL path
+                               ^
+LevelDbServer.cpp:320:57: 错误：对‘path’的引用有歧义
+     shared_ptr<LevelDbServer> handler(new LevelDbServer(path));
+                                                         ^
+LevelDbServer.cpp:40:8: 附注：备选为： std::string path
+ string path;
+        ^
+In file included from /usr/include/boost/filesystem.hpp:16:0,
+                 from LevelDbServer.cpp:13:
+/usr/include/boost/filesystem/path.hpp:55:31: 附注：         class boost::filesystem::path
+   class BOOST_FILESYSTEM_DECL path
+                               ^
+In file included from /usr/local/include/thrift/protocol/TBinaryProtocol.h:277:0,
+                 from LevelDbServer.cpp:19:
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc: In instantiation of ‘uint32_t apache::thrift::protocol::TBinaryProtocolT<Transport_>::writeBool(bool) [with Transport_ = apache::thrift::transport::TTransport; uint32_t = unsigned int]’:
+/usr/local/include/thrift/protocol/TVirtualProtocol.h:393:58:   required from ‘uint32_t apache::thrift::protocol::TVirtualProtocol<Protocol_, Super_>::writeBool_virt(bool) [with Protocol_ = apache::thrift::protocol::TBinaryProtocolT<apache::thrift::transport::TTransport>; Super_ = apache::thrift::protocol::TProtocolDefaults; uint32_t = unsigned int]’
+LevelDbServer.cpp:328:1:   required from here
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc:135:3: 错误：对‘apache::thrift::transport::TTransport::write(uint8_t*, int)’的调用没有匹配的函数
+   this->trans_->write(&tmp, 1);
+   ^
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc:135:3: 附注：备选是：
+In file included from /usr/local/include/thrift/protocol/TProtocol.h:23:0,
+                 from /usr/local/include/thrift/TProcessor.h:24,
+                 from ../thrift/gen-cpp/MapKeeper.h:10,
+                 from LevelDbServer.cpp:8:
+/usr/local/include/thrift/transport/TTransport.h:156:8: 附注：void apache::thrift::transport::TTransport::write(const int*, int)
+   void write(const uint8_t* buf, uint32_t len) {
+        ^
+/usr/local/include/thrift/transport/TTransport.h:156:8: 附注：  no known conversion for argument 1 from ‘uint8_t* {aka unsigned char*}’ to ‘const int*’
+In file included from /usr/local/include/thrift/protocol/TBinaryProtocol.h:277:0,
+                 from LevelDbServer.cpp:19:
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc: In instantiation of ‘uint32_t apache::thrift::protocol::TBinaryProtocolT<Transport_>::writeByte(int8_t) [with Transport_ = apache::thrift::transport::TTransport; uint32_t = unsigned int; int8_t = signed char]’:
+/usr/local/include/thrift/protocol/TVirtualProtocol.h:397:57:   required from ‘uint32_t apache::thrift::protocol::TVirtualProtocol<Protocol_, Super_>::writeByte_virt(int8_t) [with Protocol_ = apache::thrift::protocol::TBinaryProtocolT<apache::thrift::transport::TTransport>; Super_ = apache::thrift::protocol::TProtocolDefaults; uint32_t = unsigned int; int8_t = signed char]’
+LevelDbServer.cpp:328:1:   required from here
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc:141:3: 错误：对‘apache::thrift::transport::TTransport::write(uint8_t*, int)’的调用没有匹配的函数
+   this->trans_->write((uint8_t*)&byte, 1);
+   ^
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc:141:3: 附注：备选是：
+In file included from /usr/local/include/thrift/protocol/TProtocol.h:23:0,
+                 from /usr/local/include/thrift/TProcessor.h:24,
+                 from ../thrift/gen-cpp/MapKeeper.h:10,
+                 from LevelDbServer.cpp:8:
+/usr/local/include/thrift/transport/TTransport.h:156:8: 附注：void apache::thrift::transport::TTransport::write(const int*, int)
+   void write(const uint8_t* buf, uint32_t len) {
+        ^
+/usr/local/include/thrift/transport/TTransport.h:156:8: 附注：  no known conversion for argument 1 from ‘uint8_t* {aka unsigned char*}’ to ‘const int*’
+In file included from /usr/local/include/thrift/protocol/TBinaryProtocol.h:277:0,
+                 from LevelDbServer.cpp:19:
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc: In instantiation of ‘uint32_t apache::thrift::protocol::TBinaryProtocolT<Transport_>::writeI16(int16_t) [with Transport_ = apache::thrift::transport::TTransport; uint32_t = unsigned int; int16_t = short int]’:
+/usr/local/include/thrift/protocol/TVirtualProtocol.h:401:55:   required from ‘uint32_t apache::thrift::protocol::TVirtualProtocol<Protocol_, Super_>::writeI16_virt(int16_t) [with Protocol_ = apache::thrift::protocol::TBinaryProtocolT<apache::thrift::transport::TTransport>; Super_ = apache::thrift::protocol::TProtocolDefaults; uint32_t = unsigned int; int16_t = short int]’
+LevelDbServer.cpp:328:1:   required from here
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc:148:3: 错误：对‘apache::thrift::transport::TTransport::write(uint8_t*, int)’的调用没有匹配的函数
+   this->trans_->write((uint8_t*)&net, 2);
+   ^
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc:148:3: 附注：备选是：
+In file included from /usr/local/include/thrift/protocol/TProtocol.h:23:0,
+                 from /usr/local/include/thrift/TProcessor.h:24,
+                 from ../thrift/gen-cpp/MapKeeper.h:10,
+                 from LevelDbServer.cpp:8:
+/usr/local/include/thrift/transport/TTransport.h:156:8: 附注：void apache::thrift::transport::TTransport::write(const int*, int)
+   void write(const uint8_t* buf, uint32_t len) {
+        ^
+/usr/local/include/thrift/transport/TTransport.h:156:8: 附注：  no known conversion for argument 1 from ‘uint8_t* {aka unsigned char*}’ to ‘const int*’
+In file included from /usr/local/include/thrift/protocol/TBinaryProtocol.h:277:0,
+                 from LevelDbServer.cpp:19:
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc: In instantiation of ‘uint32_t apache::thrift::protocol::TBinaryProtocolT<Transport_>::writeI32(int32_t) [with Transport_ = apache::thrift::transport::TTransport; uint32_t = unsigned int; int32_t = int]’:
+/usr/local/include/thrift/protocol/TVirtualProtocol.h:405:55:   required from ‘uint32_t apache::thrift::protocol::TVirtualProtocol<Protocol_, Super_>::writeI32_virt(int32_t) [with Protocol_ = apache::thrift::protocol::TBinaryProtocolT<apache::thrift::transport::TTransport>; Super_ = apache::thrift::protocol::TProtocolDefaults; uint32_t = unsigned int; int32_t = int]’
+LevelDbServer.cpp:328:1:   required from here
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc:155:3: 错误：对‘apache::thrift::transport::TTransport::write(uint8_t*, int)’的调用没有匹配的函数
+   this->trans_->write((uint8_t*)&net, 4);
+   ^
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc:155:3: 附注：备选是：
+In file included from /usr/local/include/thrift/protocol/TProtocol.h:23:0,
+                 from /usr/local/include/thrift/TProcessor.h:24,
+                 from ../thrift/gen-cpp/MapKeeper.h:10,
+                 from LevelDbServer.cpp:8:
+/usr/local/include/thrift/transport/TTransport.h:156:8: 附注：void apache::thrift::transport::TTransport::write(const int*, int)
+   void write(const uint8_t* buf, uint32_t len) {
+        ^
+/usr/local/include/thrift/transport/TTransport.h:156:8: 附注：  no known conversion for argument 1 from ‘uint8_t* {aka unsigned char*}’ to ‘const int*’
+In file included from /usr/local/include/thrift/protocol/TBinaryProtocol.h:277:0,
+                 from LevelDbServer.cpp:19:
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc: In instantiation of ‘uint32_t apache::thrift::protocol::TBinaryProtocolT<Transport_>::writeI64(int64_t) [with Transport_ = apache::thrift::transport::TTransport; uint32_t = unsigned int; int64_t = long int]’:
+/usr/local/include/thrift/protocol/TVirtualProtocol.h:409:55:   required from ‘uint32_t apache::thrift::protocol::TVirtualProtocol<Protocol_, Super_>::writeI64_virt(int64_t) [with Protocol_ = apache::thrift::protocol::TBinaryProtocolT<apache::thrift::transport::TTransport>; Super_ = apache::thrift::protocol::TProtocolDefaults; uint32_t = unsigned int; int64_t = long int]’
+LevelDbServer.cpp:328:1:   required from here
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc:162:3: 错误：对‘apache::thrift::transport::TTransport::write(uint8_t*, int)’的调用没有匹配的函数
+   this->trans_->write((uint8_t*)&net, 8);
+   ^
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc:162:3: 附注：备选是：
+In file included from /usr/local/include/thrift/protocol/TProtocol.h:23:0,
+                 from /usr/local/include/thrift/TProcessor.h:24,
+                 from ../thrift/gen-cpp/MapKeeper.h:10,
+                 from LevelDbServer.cpp:8:
+/usr/local/include/thrift/transport/TTransport.h:156:8: 附注：void apache::thrift::transport::TTransport::write(const int*, int)
+   void write(const uint8_t* buf, uint32_t len) {
+        ^
+/usr/local/include/thrift/transport/TTransport.h:156:8: 附注：  no known conversion for argument 1 from ‘uint8_t* {aka unsigned char*}’ to ‘const int*’
+In file included from /usr/local/include/thrift/protocol/TBinaryProtocol.h:277:0,
+                 from LevelDbServer.cpp:19:
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc: In instantiation of ‘uint32_t apache::thrift::protocol::TBinaryProtocolT<Transport_>::writeDouble(double) [with Transport_ = apache::thrift::transport::TTransport; uint32_t = unsigned int]’:
+/usr/local/include/thrift/protocol/TVirtualProtocol.h:413:58:   required from ‘uint32_t apache::thrift::protocol::TVirtualProtocol<Protocol_, Super_>::writeDouble_virt(double) [with Protocol_ = apache::thrift::protocol::TBinaryProtocolT<apache::thrift::transport::TTransport>; Super_ = apache::thrift::protocol::TProtocolDefaults; uint32_t = unsigned int]’
+LevelDbServer.cpp:328:1:   required from here
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc:173:3: 错误：对‘apache::thrift::transport::TTransport::write(uint8_t*, int)’的调用没有匹配的函数
+   this->trans_->write((uint8_t*)&bits, 8);
+   ^
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc:173:3: 附注：备选是：
+In file included from /usr/local/include/thrift/protocol/TProtocol.h:23:0,
+                 from /usr/local/include/thrift/TProcessor.h:24,
+                 from ../thrift/gen-cpp/MapKeeper.h:10,
+                 from LevelDbServer.cpp:8:
+/usr/local/include/thrift/transport/TTransport.h:156:8: 附注：void apache::thrift::transport::TTransport::write(const int*, int)
+   void write(const uint8_t* buf, uint32_t len) {
+        ^
+/usr/local/include/thrift/transport/TTransport.h:156:8: 附注：  no known conversion for argument 1 from ‘uint8_t* {aka unsigned char*}’ to ‘const int*’
+In file included from /usr/local/include/thrift/protocol/TBinaryProtocol.h:277:0,
+                 from LevelDbServer.cpp:19:
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc: In instantiation of ‘uint32_t apache::thrift::protocol::TBinaryProtocolT<Transport_>::writeString(const string&) [with Transport_ = apache::thrift::transport::TTransport; uint32_t = unsigned int; std::string = std::basic_string<char>]’:
+/usr/local/include/thrift/protocol/TVirtualProtocol.h:417:58:   required from ‘uint32_t apache::thrift::protocol::TVirtualProtocol<Protocol_, Super_>::writeString_virt(const string&) [with Protocol_ = apache::thrift::protocol::TBinaryProtocolT<apache::thrift::transport::TTransport>; Super_ = apache::thrift::protocol::TProtocolDefaults; uint32_t = unsigned int; std::string = std::basic_string<char>]’
+LevelDbServer.cpp:328:1:   required from here
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc:183:5: 错误：对‘apache::thrift::transport::TTransport::write(uint8_t*, uint32_t&)’的调用没有匹配的函数
+     this->trans_->write((uint8_t*)str.data(), size);
+     ^
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc:183:5: 附注：备选是：
+In file included from /usr/local/include/thrift/protocol/TProtocol.h:23:0,
+                 from /usr/local/include/thrift/TProcessor.h:24,
+                 from ../thrift/gen-cpp/MapKeeper.h:10,
+                 from LevelDbServer.cpp:8:
+/usr/local/include/thrift/transport/TTransport.h:156:8: 附注：void apache::thrift::transport::TTransport::write(const int*, int)
+   void write(const uint8_t* buf, uint32_t len) {
+        ^
+/usr/local/include/thrift/transport/TTransport.h:156:8: 附注：  no known conversion for argument 1 from ‘uint8_t* {aka unsigned char*}’ to ‘const int*’
+In file included from /usr/local/include/thrift/protocol/TBinaryProtocol.h:277:0,
+                 from LevelDbServer.cpp:19:
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc: In instantiation of ‘uint32_t apache::thrift::protocol::TBinaryProtocolT<Transport_>::readBool(bool&) [with Transport_ = apache::thrift::transport::TTransport; uint32_t = unsigned int]’:
+/usr/local/include/thrift/protocol/TVirtualProtocol.h:487:57:   required from ‘uint32_t apache::thrift::protocol::TVirtualProtocol<Protocol_, Super_>::readBool_virt(bool&) [with Protocol_ = apache::thrift::protocol::TBinaryProtocolT<apache::thrift::transport::TTransport>; Super_ = apache::thrift::protocol::TProtocolDefaults; uint32_t = unsigned int]’
+LevelDbServer.cpp:328:1:   required from here
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc:342:3: 错误：‘class apache::thrift::transport::TTransport’没有名为‘readAll’的成员
+   this->trans_->readAll(b, 1);
+   ^
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc: In instantiation of ‘uint32_t apache::thrift::protocol::TBinaryProtocolT<Transport_>::readByte(int8_t&) [with Transport_ = apache::thrift::transport::TTransport; uint32_t = unsigned int; int8_t = signed char]’:
+/usr/local/include/thrift/protocol/TVirtualProtocol.h:495:56:   required from ‘uint32_t apache::thrift::protocol::TVirtualProtocol<Protocol_, Super_>::readByte_virt(int8_t&) [with Protocol_ = apache::thrift::protocol::TBinaryProtocolT<apache::thrift::transport::TTransport>; Super_ = apache::thrift::protocol::TProtocolDefaults; uint32_t = unsigned int; int8_t = signed char]’
+LevelDbServer.cpp:328:1:   required from here
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc:350:3: 错误：‘class apache::thrift::transport::TTransport’没有名为‘readAll’的成员
+   this->trans_->readAll(b, 1);
+   ^
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc: In instantiation of ‘uint32_t apache::thrift::protocol::TBinaryProtocolT<Transport_>::readI16(int16_t&) [with Transport_ = apache::thrift::transport::TTransport; uint32_t = unsigned int; int16_t = short int]’:
+/usr/local/include/thrift/protocol/TVirtualProtocol.h:499:54:   required from ‘uint32_t apache::thrift::protocol::TVirtualProtocol<Protocol_, Super_>::readI16_virt(int16_t&) [with Protocol_ = apache::thrift::protocol::TBinaryProtocolT<apache::thrift::transport::TTransport>; Super_ = apache::thrift::protocol::TProtocolDefaults; uint32_t = unsigned int; int16_t = short int]’
+LevelDbServer.cpp:328:1:   required from here
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc:361:3: 错误：‘class apache::thrift::transport::TTransport’没有名为‘readAll’的成员
+   this->trans_->readAll(theBytes.b, 2);
+   ^
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc: In instantiation of ‘uint32_t apache::thrift::protocol::TBinaryProtocolT<Transport_>::readI32(int32_t&) [with Transport_ = apache::thrift::transport::TTransport; uint32_t = unsigned int; int32_t = int]’:
+/usr/local/include/thrift/protocol/TVirtualProtocol.h:503:54:   required from ‘uint32_t apache::thrift::protocol::TVirtualProtocol<Protocol_, Super_>::readI32_virt(int32_t&) [with Protocol_ = apache::thrift::protocol::TBinaryProtocolT<apache::thrift::transport::TTransport>; Super_ = apache::thrift::protocol::TProtocolDefaults; uint32_t = unsigned int; int32_t = int]’
+LevelDbServer.cpp:328:1:   required from here
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc:372:3: 错误：‘class apache::thrift::transport::TTransport’没有名为‘readAll’的成员
+   this->trans_->readAll(theBytes.b, 4);
+   ^
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc: In instantiation of ‘uint32_t apache::thrift::protocol::TBinaryProtocolT<Transport_>::readI64(int64_t&) [with Transport_ = apache::thrift::transport::TTransport; uint32_t = unsigned int; int64_t = long int]’:
+/usr/local/include/thrift/protocol/TVirtualProtocol.h:507:54:   required from ‘uint32_t apache::thrift::protocol::TVirtualProtocol<Protocol_, Super_>::readI64_virt(int64_t&) [with Protocol_ = apache::thrift::protocol::TBinaryProtocolT<apache::thrift::transport::TTransport>; Super_ = apache::thrift::protocol::TProtocolDefaults; uint32_t = unsigned int; int64_t = long int]’
+LevelDbServer.cpp:328:1:   required from here
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc:383:3: 错误：‘class apache::thrift::transport::TTransport’没有名为‘readAll’的成员
+   this->trans_->readAll(theBytes.b, 8);
+   ^
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc: In instantiation of ‘uint32_t apache::thrift::protocol::TBinaryProtocolT<Transport_>::readDouble(double&) [with Transport_ = apache::thrift::transport::TTransport; uint32_t = unsigned int]’:
+/usr/local/include/thrift/protocol/TVirtualProtocol.h:511:57:   required from ‘uint32_t apache::thrift::protocol::TVirtualProtocol<Protocol_, Super_>::readDouble_virt(double&) [with Protocol_ = apache::thrift::protocol::TBinaryProtocolT<apache::thrift::transport::TTransport>; Super_ = apache::thrift::protocol::TProtocolDefaults; uint32_t = unsigned int]’
+LevelDbServer.cpp:328:1:   required from here
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc:397:3: 错误：‘class apache::thrift::transport::TTransport’没有名为‘readAll’的成员
+   this->trans_->readAll(theBytes.b, 8);
+   ^
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc: In instantiation of ‘uint32_t apache::thrift::protocol::TBinaryProtocolT<Transport_>::readStringBody(std::string&, int32_t) [with Transport_ = apache::thrift::transport::TTransport; uint32_t = unsigned int; std::string = std::basic_string<char>; int32_t = int]’:
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc:220:40:   required from ‘uint32_t apache::thrift::protocol::TBinaryProtocolT<Transport_>::readMessageBegin(std::string&, apache::thrift::protocol::TMessageType&, int32_t&) [with Transport_ = apache::thrift::transport::TTransport; uint32_t = unsigned int; std::string = std::basic_string<char>; int32_t = int]’
+/usr/local/include/thrift/protocol/TVirtualProtocol.h:432:65:   required from ‘uint32_t apache::thrift::protocol::TVirtualProtocol<Protocol_, Super_>::readMessageBegin_virt(std::string&, apache::thrift::protocol::TMessageType&, int32_t&) [with Protocol_ = apache::thrift::protocol::TBinaryProtocolT<apache::thrift::transport::TTransport>; Super_ = apache::thrift::protocol::TProtocolDefaults; uint32_t = unsigned int; std::string = std::basic_string<char>; int32_t = int]’
+LevelDbServer.cpp:328:1:   required from here
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc:438:19: 错误：‘class apache::thrift::transport::TTransport’没有名为‘borrow’的成员
+   if ((borrow_buf = this->trans_->borrow(NULL, &got))) {
+                   ^
+/usr/local/include/thrift/protocol/TBinaryProtocol.tcc:453:3: 错误：‘class apache::thrift::transport::TTransport’没有名为‘readAll’的成员
+   this->trans_->readAll(this->string_buf_, size);
+   ^
+In file included from LevelDbServer.cpp:22:0:
+/usr/local/include/thrift/transport/TBufferTransports.h: 在成员函数‘uint32_t apache::thrift::transport::TBufferBase::readAll(uint8_t*, uint32_t)’中:
+/usr/local/include/thrift/transport/TBufferTransports.h:83:3: 警告：在有返回值的函数中，控制流程到达函数尾 [-Wreturn-type]
+   }
+   ^
+In file included from /usr/local/include/thrift/protocol/TBinaryProtocol.h:24:0,
+                 from LevelDbServer.cpp:19:
+/usr/local/include/thrift/protocol/TVirtualProtocol.h: 在成员函数‘uint32_t apache::thrift::protocol::TVirtualProtocol<Protocol_, Super_>::skip(apache::thrift::protocol::TType) [with Protocol_ = apache::thrift::protocol::TBinaryProtocolT<apache::thrift::transport::TTransport>; Super_ = apache::thrift::protocol::TProtocolDefaults; uint32_t = unsigned int]’中:
+/usr/local/include/thrift/protocol/TVirtualProtocol.h:539:3: 警告：在有返回值的函数中，控制流程到达函数尾 [-Wreturn-type]
+   }
+   ^
+make: *** [all] 错误 1

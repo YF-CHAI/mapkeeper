@@ -21,6 +21,7 @@
 
 #include<netinet/in.h>
 
+#include <iostream>
 #include <arpa/inet.h>
 
 
@@ -60,13 +61,14 @@ public:
         //options.write_buffer_size = 500 * 1048576; // 500MB write buffer
         //options.block_cache = leveldb::NewLRUCache(10000L * 1048576L);  // 1.5GB cache
         //options.compression = leveldb::kNoCompression;
-
+        cout << "directoryName " << directoryName << endl;
         boost::unique_lock< boost::shared_mutex > writeLock(mutex_);;
 
         directory_iterator end_itr;
         for (directory_iterator itr(directoryName); itr != end_itr;itr++) {
             if (!is_directory(itr->status())) {
                 std::string mapName = itr->path().filename().string();
+                cout << "mapName in constructor is " << mapName << endl;
                 KVEngine* kv = KVEngine::Open("kvtree", itr->path().string(), PMEMOBJ_MIN_POOL);
                 //cout << "itr->path().filename() " << mapName << endl;
                 //cout << "itr->path().string() " << itr->path().string() << endl;
@@ -96,9 +98,9 @@ public:
         //
         //}
         printf("addMap\n");
-	std::string tmp = directoryName_ + "/" + filename;
-	printf("%s\n", tmp.c_str());
-	KVEngine* kv = KVEngine::Open("kvtree", directoryName_ + "/" + filename, PMEMOBJ_MIN_POOL);
+	   std::string tmp = directoryName_ + "/" + filename;
+       cout << "pathname in addMap is " << tmp << endl;
+    	KVEngine* kv = KVEngine::Open("kvtree", directoryName_ + "/" + filename, PMEMOBJ_MIN_POOL);
         std::string mapName_ = filename;
         boost::unique_lock< boost::shared_mutex > writeLock(mutex_);;
         maps_.insert(mapName_, kv);

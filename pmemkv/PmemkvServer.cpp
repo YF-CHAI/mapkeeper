@@ -45,7 +45,7 @@ int syncmode;
 int blindinsert;
 int blindupdate;
 
-
+std::string pmempath;
 
 class PmemkvServer: virtual public MapKeeperIf {
 public:
@@ -93,8 +93,12 @@ public:
             // TODO check return code
         //    printf("status: %s\n", status.ToString().c_str());
         //    return ResponseCode::Error;
+        //
         //}
-        KVEngine* kv = KVEngine::Open("kvtree", directoryName_ + "/" + filename, PMEMOBJ_MIN_POOL);
+        printf("addMap\n");
+	std::string tmp = directoryName_ + "/" + filename;
+	printf("%s\n", tmp.c_str());
+	KVEngine* kv = KVEngine::Open("kvtree", directoryName_ + "/" + filename, PMEMOBJ_MIN_POOL);
         std::string mapName_ = filename;
         boost::unique_lock< boost::shared_mutex > writeLock(mutex_);;
         maps_.insert(mapName_, kv);
@@ -193,7 +197,8 @@ public:
     }
 
     ResponseCode::type insert(const std::string& mapName, const std::string& key, const std::string& value) {
-        // TODO Get and Put should be within a same transaction
+	std::cout << "value "  << value.size() << std::endl;    
+    // TODO Get and Put should be within a same transaction
         boost::shared_lock< boost::shared_mutex> readLock(mutex_);;
         boost::ptr_map<std::string, pmemkv::KVEngine>::iterator itr = maps_.find(mapName);
         if (itr == maps_.end()) {
@@ -277,12 +282,13 @@ private:
 };
 
 int main(int argc, char **argv) {
-    if(argc != 4) { printf("Usage: %s <sync:0 or 1>(unused for pmemkv) <blindinsert:0 or 1> <blindupdate:0 or 1>\n", argv[0]); }
+    if(argc != 5) { printf("Usage: %s <sync:0 or 1>(unused for pmemkv) <blindinsert:0 or 1> <blindupdate:0 or 1> <path>\n", argv[0]); }
     syncmode    = atoi(argv[1]);
     blindinsert = atoi(argv[2]);
     blindupdate = atoi(argv[3]);
+    pmempath = std::string(argv[4]);
     int port = 9090;
-    shared_ptr<PmemkvServer> handler(new PmemkvServer("./data"));
+    shared_ptr<PmemkvServer> handler(new PmemkvServer(pmempath));
     shared_ptr<TProcessor> processor(new MapKeeperProcessor(handler));
     shared_ptr<TServerTransport> serverTransport(new TServerSocket(port));
     shared_ptr<TTransportFactory> transportFactory(new TFramedTransportFactory());
